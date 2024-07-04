@@ -1,0 +1,48 @@
+#GET ALL USERS
+GET http://localhost:4000/users/
+###
+
+
+### GET A SINGLE USER
+GET http://localhost:4000/users/2
+
+
+### REGISTER A USER
+POST http://localhost:4000/register
+content-type: application/json
+
+{
+    "email": "jamahal@mail.com",
+    "password": "123456"
+}
+###
+
+# SIGN IN
+POST http://localhost:4000/login
+content-type: application/json
+
+{
+    "email": "jamahal@mail.com",
+    "password": "123456"
+}
+
+
+#GET ALL BOOKINGS
+http://localhost:4000/booking  
+
+###
+#GET ALL BOOKINGS FOR A USER
+http://localhost:4000/USERS/1/bookings
+
+###
+http://localhost:4000/Listing   
+
+###
+# POST http://localhost:4000/post 
+# content-type: application/json
+
+
+# {
+#     "title": "airbnb clone",
+#     "author": "boya"
+# }
