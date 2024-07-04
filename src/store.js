@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { listingListReducers } from "./reducers/listingListReducer";
+import { listingListReducers } from "./reducers/listingListReducers";
 import { modalReducers } from "./reducers/modalReducers";
 import { userLoginReducer } from "./reducers/userReducers";
 
@@ -27,4 +27,4 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(...middleware))
 );
 
-export default Store;
+export default store;

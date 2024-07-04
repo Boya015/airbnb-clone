@@ -4,7 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Avatar } from "@mui/material";
-import { openModal } from "../../actions/modalAction";
+import { openModal } from "../../action/modalAction";
 import Login from "../Login";
 import "./Header.css";
 

@@ -3,16 +3,16 @@ import { useDispatch, useSelector } from "react-redux";
 import Banner from "./Banner";
 import Card from "./Card";
 import "./Home.css";
-import { listingList } from "../actions/listingActions";
+import { listListing } from "../action/listingAction";
 
 const Home = () => {
   const dispatch = useDispatch();
 
-  const listingList = useSelector((state) => state.listingList);
-  const { loading, error, listings } = listingList;
+  const listListing = useSelector((state) => state.listListing);
+  const { loading, error, listings } = listListing;
 
   useEffect(() => {
-    dispatch(listingList());
+    dispatch(listListing());
   }, [dispatch]);
 
   return (
