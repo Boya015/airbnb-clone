@@ -6,6 +6,7 @@ import {
   USER_LOGOUT,
 } from "../types/userTypes";
 
+
 export const login = (email, password) => async (dispatch) => {
   try {
     dispatch({
@@ -39,4 +40,4 @@ export const login = (email, password) => async (dispatch) => {
   }
 };
 
-export const logout = ( ) => async(dispatch) => {};
+export const logout = ( ) => (dispatch => {});

@@ -4,6 +4,7 @@ import Header from "./components/layout/Header";
 import Home from "./components/Home";
 import Footer from "./components/layout/Footer";
 import SearchPage from "./components/SearchPage";
+import  Modal  from "./components/Modal";
 const App = () => {
   return (
     <div className="App">

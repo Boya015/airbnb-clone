@@ -8,8 +8,8 @@ import { listListing } from "../action/listingAction";
 const Home = () => {
   const dispatch = useDispatch();
 
-  const listListing = useSelector((state) => state.listListing);
-  const { loading, error, listings } = listListing;
+  const listListingState = useSelector((state) => state.listListing);
+  const { loading, error, listings } = listListingState;
 
   useEffect(() => {
     dispatch(listListing());
@@ -26,6 +26,7 @@ const Home = () => {
         <div className="home_section">
           {listings.map((listing) => (
             <Card
+              key={listing.id} // Add a key prop to each Card component
               src={listing.img}
               title={listing.title}
               description={listing.description}
@@ -34,7 +35,7 @@ const Home = () => {
           ))}
         </div>
       )}
-      {/* <div className="home_section">
+      <div className="home_section">
         <Card
           src="https://a0.muscache.com/im/pictures/570fdbed-9720-44b8-b4c1-7370054ab77c.jpg?im_w=720"
           title="Online Experiences"
@@ -50,9 +51,9 @@ const Home = () => {
           title="Online Experiences"
           description="Unique activites we can do together, led by a world of hosts."
         />
-      </div> */}
+      </div> 
 
-      {/* <div className="home_section">
+      <div className="home_section">
         <Card
           src="https://a0.muscache.com/im/pictures/miso/Hosting-685550443824818589/original/a94b06dd-733e-40b5-875e-a26d71254170.jpeg?im_w=720"
           title="Online Experiences"
@@ -68,7 +69,7 @@ const Home = () => {
           title="Online Experiences"
           description="Unique activites we can do together, led by a world of hosts."
         />
-      </div> */}
+      </div>
     </div>
   );
 };
