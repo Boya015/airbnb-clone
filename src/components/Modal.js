@@ -5,7 +5,7 @@ import "./Modal.css";
 
 const Modal = () => {
   const dispatch = useDispatch();
-  const modal = (useSelector = (state) => state.modal);
+  const modal = useSelector((state) => state.modal);
   const { openClose, content } = modal;
 
   let modalInlineStyle;
