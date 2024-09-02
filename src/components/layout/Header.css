@@ -88,8 +88,9 @@ input:focus {
   border: none;
 }
 
-.search-input input {
+.search-input > input {
   border: none;
+  text-align: center;
 }
 
 .search-button {
@@ -112,6 +113,7 @@ input:focus {
 
 .date-picker {
   border: 1px solid lightgray;
+  text-align: center;
 }
 
 .date-picker::placeholder {
