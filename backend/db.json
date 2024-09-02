@@ -1,44 +1,30 @@
 {
   "users": [
     {
-      "id": "1",
+      "userId": "1",
       "name": "boya ndlovu",
       "email": "boyandlovu@gmail.com",
       "phone": "078-290-5037"
     },
     {
-      "id": "2",
+      "userId": 2,
       "name": "Ervin Howell",
       "email": "Shanna@melissa.tv",
       "phone": "010-692-6593"
-    },
-    {
-      "email": "olivier@mail.com",
-      "password": "@49fje8xkdsnvosnvoriorjuiewpoewJFREN83OI3O43iINCOWIUijmc",
-      "id": 3
-    },
-    {
-      "email": "patient@mail.com",
-      "password": "@49fje8xkdsnvosnvoriorjuiewpoewJFREN83OI3O43iINCOWIUijmc",
-      "id": 4
-    },
-    {
-      "id": "cda1",
-      "email": "jamahal@mail.com",
-      "password": "123456"
     }
   ],
   "booking": [
     {
-      "ListingId": "1",
+      "bookingId": 1,
       "startDate": "2022-02-20",
       "endDate": "2022-02-21",
-      "userId": "1"
+      "userId": 1,
+      "listingId": 1
     }
   ],
-  "Listing": [
+  "listing": [
     {
-      "id": 1,
+      "listingId": 1,
       "bath_num": 3,
       "bed_num": 4,
       "zip": 23456,
@@ -51,7 +37,7 @@
       "userId": 2
     },
     {
-      "id": 2,
+      "listingId": 2,
       "img": "https://a0.muscache.com/im/pictures/miso/Hosting-851868134001572631/original/68649a73-b86a-4be9-8f0b-0a0fd8d032b1.jpeg?im_w=720",
       "title": "Online Experiences",
       "description": "Unique activites we can do together, led by a world of hosts.",

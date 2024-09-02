@@ -1,12 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { thunk } from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-import { listingReducers } from "./reducers/listingReducers";
+import { listingListReducers } from "./reducers/listingReducers";
 import { modalReducers } from "./reducers/modalReducers";
 import { userLoginReducer } from "./reducers/userReducers";
 
 const reducer = combineReducers({
-  listingList: listingReducers,
+  listingList: listingListReducers,
   modal: modalReducers,
   userLogin: userLoginReducer,
 });

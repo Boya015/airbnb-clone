@@ -1,73 +1,191 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 100;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 80px;
+}
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #6a6a6a;
+}
+.header-links p {
+  font-size: 14px;
+}
+.header-links .language-icon {
+  font-size: 19px;
 }
 
-.header_logo {
-    object-fit: contain;
-    height: 100px;
-    margin-left: 20px;
+.profile-menu-icons {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  color: #6a6a6a;
+  width: 86px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.header_center {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    max-width: fit-content;
-    padding: 10px;
-    height: 30px;
-    border: 1px solid lightgray;
-    border-radius: 999px;
+.profile-menu-icons:hover {
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.header_center > input {
-    border: none;
-    padding: 10px;
-    outline-width: 0;
+.profile-menu-icons .menu-icon {
+  font-size: 20px;
 }
 
-.header_right {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    width: 15vw;
-    margin-right: 80px;
+.profile-menu-icons .account-icon {
+  font-size: 32px;
 }
 
-.dropdown {
-    position: relative;
+.header img {
+  width: 102px;
 }
 
-.dropdown-content {
-    border-radius: 20px;
-    display: none;
-    margin: 2px 15px 20px -120px;
-    padding: 20px 0;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-height: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.dropdown-content span {
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-    padding: 10px 25px;
-    text-decoration: none;
-    display: block;
+.header-text {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 0 150px;
 }
 
-.dropdown-content span:hover {
-    background-color: #ddd;
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.header-search {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 50px;
+  align-items: center;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.search-input input {
+  border: none;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+}
+
+.search-checkin,
+.search-checkout,
+.search-who {
+  border-left: 1px solid lightgray;
+  padding: 0 0 0 20px;
+}
+
+.banner-search {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.date-picker {
+  border: 1px solid lightgray;
+}
+
+.date-picker::placeholder {
+  color: #bbb;
+}
+
+.date-picker:focus {
+  outline: none;
+}
+
+.search-who {
+  position: relative;
+}
+.search-button {
+  color: #bbb;
+}
+.guest-popup {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.close-popup {
+  background-color: #ff7779;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.close-popup:hover {
+  background-color: #ff4444;
+}
+
+.guest-selector {
+  display: flex;
+  align-items: center;
+}
+.guest-button {
+  background-color: #ff7779;
+  color: #fff;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 18px;
+}
+.guest-button:hover {
+  background-color: #ff4444;
+}
+.guest-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0 5px;
+  color: #bbb;
+}
+.guest-input:focus {
+  outline: none;
+  border: 1px solid #ff7779;
+  box-shadow: 0 0 5px rgba(255, 119, 121, 0.5);
+}
+.search-checkin,
+.search-checkout {
+  display: flex;
+  flex-direction: column;
 }

@@ -22,6 +22,7 @@ const Modal = () => {
   const closeModalHandler = () => {
     dispatch(openModal("close", ""));
   };
+
   return (
     <div className="site-modal" style={modalInlineStyle}>
       <div className="modal-content">

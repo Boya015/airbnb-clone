@@ -9,12 +9,15 @@ import "./Search.css";
 const Search = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  
 
-  const selectionRange = {
-    startDate: startDate,
-    endDate: endDate,
-    key: "selection",
-  };
+  const selectionRange = [
+    {
+      startDate: startDate,
+      endDate: endDate,
+      key: "selection",
+    },
+  ];
 
   const handleSelect = (ranges) => {
     setStartDate(ranges.selection.startDate);

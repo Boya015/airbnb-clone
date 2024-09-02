@@ -1,28 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "@mui/material/Button";
 import "./Banner.css";
-import Search from "./Search";
+
 
 const Banner = () => {
-  const [showSearch, setShowSearch] = useState(false);
+ 
   return (
     <div className="banner">
-      <div className="banner_search">
-        {showSearch && <Search /> }
-        <Button
-          onClick={() => setShowSearch(!showSearch)}
-          className="banner_searchButton"
-          variant="outlined"
-        >{showSearch? "Hide": "Search Dates"}
-        </Button>
-      </div>
-      <div className="banner_info">
+      <div classname="banner-info">
         <h1>Get out and stretch your imagination</h1>
         <h5>
-            Plan a different kind of gateway to uncover the hidden gems near you.
+          Plan a different kind of gateway to uncover the hidden gems near you
         </h5>
         <Button variant="outlined">Explore Nearby</Button>
       </div>
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/5748c1e627d4bdfe229126c
+6/1589405828459-OD2WO870G3LS97YHXDJA/686cd128-a501-4945-9e81-12bdb7e453e4_
+Airbnb_OOA_08.jpg"
+        alt="Airbnb experience"
+        className="banner-image"
+      />
     </div>
   );
 };
